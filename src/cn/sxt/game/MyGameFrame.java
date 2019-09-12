@@ -1,10 +1,16 @@
 package cn.sxt.game;
 
 import javax.swing.JFrame;
+import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class MyGameFrame extends JFrame {
+
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+    }
 
     //initialized game window
     public void launchFrame() {
