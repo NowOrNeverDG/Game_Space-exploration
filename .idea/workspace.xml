@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="109d36fc-9c22-45b2-9bca-5b6cca271273" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Images/Bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Plane.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/sxt/game/GameObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/sxt/game/Plane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/sxt/game/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/sxt/game/GameObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/sxt/game/MyGameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/sxt/game/MyGameFrame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,10 +23,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/sxt/game/MyGameFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="339">
+              <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/sxt/game/GameObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <folding>
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#703#704#0" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#792#793#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,13 +73,14 @@
       <list>
         <option value="$PROJECT_DIR$/src/cn/sxt/game/GameUtil.java" />
         <option value="$PROJECT_DIR$/src/Plane.java" />
-        <option value="$PROJECT_DIR$/src/cn/sxt/game/GameObject.java" />
         <option value="$PROJECT_DIR$/src/cn/sxt/game/Plane.java" />
+        <option value="$PROJECT_DIR$/src/cn/sxt/game/GameObject.java" />
         <option value="$PROJECT_DIR$/src/cn/sxt/game/MyGameFrame.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="166" />
     <option name="y" value="23" />
     <option name="width" value="680" />
     <option name="height" value="828" />
@@ -161,15 +173,15 @@
       <workItem from="1568269623150" duration="637000" />
       <workItem from="1568316819865" duration="2681000" />
       <workItem from="1568341431870" duration="205000" />
-      <workItem from="1568341737992" duration="3399000" />
+      <workItem from="1568341737992" duration="3653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12792000" />
+    <option name="totallyTimeSpent" value="13046000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="828" extended-state="6" />
+    <frame x="166" y="23" width="680" height="828" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.26435935" />
@@ -319,17 +331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/sxt/game/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/sxt/game/Plane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -337,10 +338,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/sxt/game/GameObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/sxt/game/MyGameFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="339">
+          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

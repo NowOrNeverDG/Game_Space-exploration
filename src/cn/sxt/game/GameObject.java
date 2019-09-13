@@ -8,10 +8,6 @@ public class GameObject {
      int speed;
      int width,height;
 
-     public void drawSelf (Graphics g) {
-         g.drawImage(img,(int)x, (int)y,null);
-     }
-
      //instruction
      public GameObject(){}
 
@@ -33,5 +29,12 @@ public class GameObject {
          this.y = y;
      }
 
+    public void drawSelf (Graphics g) {
+        g.drawImage(img,(int)x, (int)y,null);
+    }
+
+    public Rectangle getRect() {
+         return new Rectangle((int)x, (int)y, width,height);
+    }
 
 }
