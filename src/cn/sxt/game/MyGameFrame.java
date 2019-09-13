@@ -7,9 +7,22 @@ import java.awt.event.WindowEvent;
 
 public class MyGameFrame extends JFrame {
 
+    Image planeImg = GameUtil.getImage("Images/Plane.png");
+    Image bgImg = GameUtil.getImage("Images/Bg.jpg");
+
+    Plane plane = new Plane(planeImg,250,250);
+
+    int planeX = 250; int planeY = 250;//pre-set the coord of
+    public static void main (String[] args) {
+        MyGameFrame f = new MyGameFrame();
+        f.launchFrame();
+    }
+
     @Override
     public void paint(Graphics g) {
-        super.paint(g);
+        //super.paint(g);
+        g.drawImage(bgImg,0,0,null);
+        plane.drawSelf(g);
     }
 
     //initialized game window
@@ -27,10 +40,30 @@ public class MyGameFrame extends JFrame {
                 System.exit(0);
             }
         });
+
+        new PaintThread().start(); //Executed the thread repaints window
     }
 
-    public static void main (String[] args) {
-        MyGameFrame f = new MyGameFrame();
-        f.launchFrame();
+    //repainted
+    class PaintThread extends Thread {
+
+        @Override
+        public void run() {
+            while(true) {
+                repaint(); System.out.println("Repainted");
+
+                try {
+                    Thread.sleep(40);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
+
+
+
+
+
+
 }
