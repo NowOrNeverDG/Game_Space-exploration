@@ -4,9 +4,10 @@ import java.awt.*;
 
 public class GameObject {
      Image img;
+     int width,height;
      double x,y;
      int speed;
-     int width,height;
+
 
      //instruction
      public GameObject(){}

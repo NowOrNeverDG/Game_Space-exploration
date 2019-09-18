@@ -2,6 +2,8 @@ package cn.sxt.game;
 
 import javax.swing.JFrame;
 import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
@@ -23,7 +25,7 @@ public class MyGameFrame extends JFrame {
         //super.paint(g);
         g.drawImage(bgImg,0,0,null);
         plane.drawSelf(g);
-        System.out.println(plane.getRect());
+        //System.out.println(plane.getRect());
     }
 
     //initialized game window
@@ -43,6 +45,7 @@ public class MyGameFrame extends JFrame {
         });
 
         new PaintThread().start(); //Executed the thread repaints window
+        addKeyListener(new KeyMonitor());
     }
 
     //repainted
@@ -51,10 +54,10 @@ public class MyGameFrame extends JFrame {
         @Override
         public void run() {
             while(true) {
-                repaint(); System.out.println("Repainted");
+                repaint(); //System.out.println("Repainted");
 
                 try {
-                    Thread.sleep(40);
+                    Thread.sleep(20);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -63,6 +66,20 @@ public class MyGameFrame extends JFrame {
     }
 
 
+    class KeyMonitor extends KeyAdapter {
+
+        @Override
+        public void keyPressed(KeyEvent e) {
+            //System.out.println("Pressed:" + e.getKeyCode());
+            plane.addDirection(e);
+        }
+
+        @Override
+        public void keyReleased(KeyEvent e) {
+            //System.out.println("Released:" + e.getKeyCode());
+            plane.minusDirection(e);
+        }
+    }
 
 
 
