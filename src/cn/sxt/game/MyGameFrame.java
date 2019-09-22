@@ -25,7 +25,7 @@ public class MyGameFrame extends JFrame {
         //super.paint(g);
         g.drawImage(bgImg,0,0,null);
         plane.drawSelf(g);
-        shell.drawSelf(g);
+        shell.draw(g);
     }
 
     //initialized game window
