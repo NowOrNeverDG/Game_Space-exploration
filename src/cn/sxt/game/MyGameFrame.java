@@ -13,7 +13,7 @@ public class MyGameFrame extends JFrame {
     Image bgImg = GameUtil.getImage("Images/Bg.jpg");
 
     Plane plane = new Plane(planeImg,250,250);
-
+    Shell shell = new Shell();
     int planeX = 250; int planeY = 250;//pre-set the coord of
     public static void main (String[] args) {
         MyGameFrame f = new MyGameFrame();
@@ -25,14 +25,14 @@ public class MyGameFrame extends JFrame {
         //super.paint(g);
         g.drawImage(bgImg,0,0,null);
         plane.drawSelf(g);
-        //System.out.println(plane.getRect());
+        shell.drawSelf(g);
     }
 
     //initialized game window
     public void launchFrame() {
         this.setTitle("Worked by Genn");
         this.setVisible(true);
-        this.setSize(500,500);
+        this.setSize(Constant.GAME_WIDTH,Constant.GAME_HEIGHT);
         this.setLocation(300,300);
 
         //Closed windows completely
