@@ -7,14 +7,17 @@ import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class MyGameFrame extends JFrame {
+public class MyGameFrame extends Frame {
 
     Image planeImg = GameUtil.getImage("Images/Plane.png");
     Image bgImg = GameUtil.getImage("Images/Bg.jpg");
 
     Plane plane = new Plane(planeImg,250,250);
+    int planeX = 250; int planeY = 250;//pre-set the coordinate of plane
+
     Shell shell = new Shell();
-    int planeX = 250; int planeY = 250;//pre-set the coord of
+    Shell[] shells = new Shell[50];
+
     public static void main (String[] args) {
         MyGameFrame f = new MyGameFrame();
         f.launchFrame();
@@ -22,10 +25,19 @@ public class MyGameFrame extends JFrame {
 
     @Override
     public void paint(Graphics g) {
-        //super.paint(g);
         g.drawImage(bgImg,0,0,null);
         plane.drawSelf(g);
         shell.draw(g);
+
+        //draw all shells
+        for (int i = 0; i < shells.length; i++) {
+            shells[i].draw(g);
+
+            boolean peng = shells[i].getRect().intersects(plane.getRect());
+
+            //Confirmed if the plane is lived
+            if(peng) {plane.live = false;}
+        }
     }
 
     //initialized game window
@@ -46,6 +58,11 @@ public class MyGameFrame extends JFrame {
 
         new PaintThread().start(); //Executed the thread repaints window
         addKeyListener(new KeyMonitor());
+
+        //initialize Shells
+        for ( int i = 0; i < shells.length; i++) {
+            shells[i] = new Shell();
+        }
     }
 
     //repainted
@@ -57,7 +74,7 @@ public class MyGameFrame extends JFrame {
                 repaint(); //System.out.println("Repainted");
 
                 try {
-                    Thread.sleep(20);
+                    Thread.sleep(40);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -82,6 +99,17 @@ public class MyGameFrame extends JFrame {
     }
 
 
+    //Double buffering
+    private Image offScreenImage = null;
+    public void update(Graphics g) {
+        if (offScreenImage == null) offScreenImage = this.createImage(Constant.GAME_WIDTH,Constant.GAME_HEIGHT);
+
+        Graphics gOff = offScreenImage.getGraphics();
+        paint(gOff);
+        g.drawImage(offScreenImage,0,0,null);
+
+
+    }
 
 
 }

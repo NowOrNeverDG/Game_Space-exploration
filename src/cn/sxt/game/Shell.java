@@ -11,14 +11,13 @@ public class Shell extends GameObject{
         y = 200;
         width = 10;
         height = 10;
-        speed = 10;
+        speed = 3;
         degree = Math.random()* Math.PI * 2;
     }
 
     public void draw (Graphics g) {
         Color c = g.getColor();
         g.setColor(Color.YELLOW);
-        System.out.println(x + y + width + height + "/n");
         g.fillOval((int)x,(int)y,width,height);
 
         x += speed * Math.cos(degree);

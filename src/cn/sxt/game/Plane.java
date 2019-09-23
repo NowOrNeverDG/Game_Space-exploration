@@ -5,23 +5,29 @@ import java.awt.event.KeyEvent;
 
 public class Plane extends GameObject {
     boolean left,right,up,down;
+    boolean live = true; //if the plane was broken
 
     public static final double speed = 3;//adjusted origin speed
     public static final double speedRate  = 0.3; //adjusted speedRate
 
     public void drawSelf(Graphics g) {
-        g.drawImage(img,(int)x,(int)y,null);
+        if (live) {
+            g.drawImage(img, (int) x, (int) y, null);
 
-        if(left) x -= speed + speedRate;
-        if(up) y -= speed + speedRate;
-        if(right) x += speed + speedRate;
-        if(down) y += speed + speedRate;
+            if (left) x -= speed + speedRate;
+            if (up) y -= speed + speedRate;
+            if (right) x += speed + speedRate;
+            if (down) y += speed + speedRate;
+        } else {}
     }
 
     public Plane(Image img, double x, double y) {
         this.img = img;
         this.x = x;
         this.y = y;
+        this.width = img.getWidth(null);
+        this.height = img.getHeight(null);
+
     }
 
     //Button execution of operation
