@@ -1,23 +1,28 @@
 package cn.sxt.game;
 
 import javax.swing.JFrame;
+import javax.xml.crypto.Data;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.Date;
 
 public class MyGameFrame extends Frame {
 
     Image planeImg = GameUtil.getImage("Images/Plane.png");
     Image bgImg = GameUtil.getImage("Images/Bg.jpg");
 
-    Plane plane = new Plane(planeImg,250,250);
-    int planeX = 250; int planeY = 250;//pre-set the coordinate of plane
+    Plane plane = new Plane(planeImg,250,250,3);
 
     Shell shell = new Shell();
     Shell[] shells = new Shell[50];
 
+    Explode bao;
+    Date startTime = new Date();
+    Date endTime;
+    int period;//alive duration
     public static void main (String[] args) {
         MyGameFrame f = new MyGameFrame();
         f.launchFrame();
@@ -25,19 +30,34 @@ public class MyGameFrame extends Frame {
 
     @Override
     public void paint(Graphics g) {
+        Color originColor = g.getColor();
         g.drawImage(bgImg,0,0,null);
         plane.drawSelf(g);
         shell.draw(g);
 
-        //draw all shells
+        //Draw all shells
         for (int i = 0; i < shells.length; i++) {
             shells[i].draw(g);
-
+            //If the plane intersects shells
             boolean peng = shells[i].getRect().intersects(plane.getRect());
+            if(peng) {
+                plane.live = false;
+                if (bao == null) {
+                    bao = new Explode(plane.x,plane.y);
 
-            //Confirmed if the plane is lived
-            if(peng) {plane.live = false;}
+                    endTime = new Date();
+                    period = (int)((endTime.getTime()-startTime.getTime())/1000);
+                }
+                bao.draw(g);
+            }
+            if (!plane.live){
+                g.setColor(Color.white);
+                g.drawString("Durarion: " + period +"Sec", (int)plane.x, (int)plane.y);
+            }
+
         }
+
+        g.setColor(originColor);
     }
 
     //initialized game window
@@ -57,9 +77,9 @@ public class MyGameFrame extends Frame {
         });
 
         new PaintThread().start(); //Executed the thread repaints window
-        addKeyListener(new KeyMonitor());
+        addKeyListener(new KeyMonitor());//Keyboard Monitor
 
-        //initialize Shells
+        //initialize 50 Shells
         for ( int i = 0; i < shells.length; i++) {
             shells[i] = new Shell();
         }
@@ -82,7 +102,6 @@ public class MyGameFrame extends Frame {
         }
     }
 
-
     class KeyMonitor extends KeyAdapter {
 
         @Override
@@ -98,7 +117,6 @@ public class MyGameFrame extends Frame {
         }
     }
 
-
     //Double buffering
     private Image offScreenImage = null;
     public void update(Graphics g) {
@@ -107,9 +125,5 @@ public class MyGameFrame extends Frame {
         Graphics gOff = offScreenImage.getGraphics();
         paint(gOff);
         g.drawImage(offScreenImage,0,0,null);
-
-
     }
-
-
 }

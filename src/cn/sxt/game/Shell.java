@@ -3,7 +3,10 @@ package cn.sxt.game;
 import java.awt.*;
 
 public class Shell extends GameObject{
-
+    public static final int borderThicknessRight = 0;
+    public static final int borderThicknessLeft = 0;
+    public static final int borderThicknessUp = 0;
+    public static final int borderThicknessDown = 0;
     double degree;
 
     public Shell() {
@@ -23,9 +26,8 @@ public class Shell extends GameObject{
         x += speed * Math.cos(degree);
         y += speed * Math.sin(degree);
 
-
         if (x < 0 || x > Constant.GAME_WIDTH - width)  {degree = Math.PI - degree;}
-        if (y < 0 || y > Constant.GAME_HEIGHT - height)  {degree = - degree;}
+        if (y < 25 || y > Constant.GAME_HEIGHT - height)  {degree = - degree;}
 
         g.setColor(c);
     }

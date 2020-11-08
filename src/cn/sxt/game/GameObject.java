@@ -3,11 +3,10 @@ package cn.sxt.game;
 import java.awt.*;
 
 public class GameObject {
-     Image img;
-     int width,height;
-     double x,y;
-     int speed;
-
+    Image img;
+    int width,height;
+    double x,y;
+    int speed;
 
      //instruction
      public GameObject(){}
@@ -22,7 +21,6 @@ public class GameObject {
          this.height = height;
      }
 
-
      public GameObject(Image img, double x, double y) {
          super();
          this.img = img;
@@ -30,12 +28,13 @@ public class GameObject {
          this.y = y;
      }
 
+
     public void drawSelf (Graphics g) {
         g.drawImage(img,(int)x, (int)y,null);
     }
 
+    //Returns the rectangle where the object is located. Convinience to following Collision detection
     public Rectangle getRect() {
-         return new Rectangle((int)x, (int)y, width,height);
+          return new Rectangle((int)x, (int)y, width,height);
     }
-
 }

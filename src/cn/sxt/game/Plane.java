@@ -7,8 +7,8 @@ public class Plane extends GameObject {
     boolean left,right,up,down;
     boolean live = true; //if the plane was broken
 
-    public static final double speed = 3;//adjusted origin speed
-    public static final double speedRate  = 0.3; //adjusted speedRate
+    public double speed = 3;//adjusted origin speed
+    public double speedRate  = 0.3; //adjusted speedRate
 
     public void drawSelf(Graphics g) {
         if (live) {
@@ -18,7 +18,7 @@ public class Plane extends GameObject {
             if (up) y -= speed + speedRate;
             if (right) x += speed + speedRate;
             if (down) y += speed + speedRate;
-        } else {}
+        } else {  }
     }
 
     public Plane(Image img, double x, double y) {
@@ -27,12 +27,19 @@ public class Plane extends GameObject {
         this.y = y;
         this.width = img.getWidth(null);
         this.height = img.getHeight(null);
-
     }
 
+    public Plane (Image img, double x, double y, int speed) {
+        this.img = img;
+        this.x = x;
+        this.y = y;
+        this.speed = speed;
+        this.width = img.getWidth(null);
+        this.height = img.getHeight(null);
+    }
     //Button execution of operation
     public void addDirection(KeyEvent e) {
-        switch(e.getKeyCode()) {
+        switch(e.getKeyCode()) {//getKeyCode:得到所按键的信息
             case KeyEvent.VK_LEFT: left = true; break;
             case KeyEvent.VK_UP: up = true; break;
             case KeyEvent.VK_RIGHT: right = true; break;
@@ -51,5 +58,4 @@ public class Plane extends GameObject {
             default: break;
         }
     }
-
 }
