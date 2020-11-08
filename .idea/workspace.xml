@@ -1,42 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="109d36fc-9c22-45b2-9bca-5b6cca271273" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/Explode/e9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/sxt/game/Explode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PlaneGame0.1/META-INF/PlaneGame0.1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/GameObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/GameUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/GameUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/MyGameFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/MyGameFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/MyGameFrame$KeyMonitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/MyGameFrame$KeyMonitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/MyGameFrame$PaintThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/MyGameFrame$PaintThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/MyGameFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/MyGameFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/Plane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/Plane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/Shell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PlaneGame0.1/cn/sxt/game/Shell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PlaneGame0.1/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PlaneGame0.1/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/sxt/game/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/sxt/game/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/sxt/game/MyGameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/sxt/game/MyGameFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/sxt/game/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/sxt/game/Plane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/sxt/game/Shell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/sxt/game/Shell.java" afterDir="false" />
-    </list>
+    <list default="true" id="109d36fc-9c22-45b2-9bca-5b6cca271273" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,7 +141,7 @@
       <workItem from="1572388992290" duration="116000" />
       <workItem from="1573967172612" duration="51000" />
       <workItem from="1604697907576" duration="4963000" />
-      <workItem from="1604737769203" duration="9610000" />
+      <workItem from="1604737769203" duration="9733000" />
     </task>
     <servers />
   </component>
@@ -188,38 +153,38 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="128" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1604698026005" />
-    <state width="1398" height="276" key="GridCell.Tab.0.bottom" timestamp="1604800526358">
+    <state width="1398" height="202" key="GridCell.Tab.0.bottom" timestamp="1604801177454">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="276" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604800526358" />
-    <state width="1398" height="276" key="GridCell.Tab.0.center" timestamp="1604800526358">
+    <state width="1398" height="202" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604801177454" />
+    <state width="1398" height="202" key="GridCell.Tab.0.center" timestamp="1604801177454">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="276" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1604800526358" />
-    <state width="1398" height="276" key="GridCell.Tab.0.left" timestamp="1604800526357">
+    <state width="1398" height="202" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1604801177454" />
+    <state width="1398" height="202" key="GridCell.Tab.0.left" timestamp="1604801177453">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="276" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1604800526357" />
-    <state width="1398" height="276" key="GridCell.Tab.0.right" timestamp="1604800526358">
+    <state width="1398" height="202" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1604801177453" />
+    <state width="1398" height="202" key="GridCell.Tab.0.right" timestamp="1604801177454">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="276" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1604800526358" />
-    <state width="1398" height="276" key="GridCell.Tab.1.bottom" timestamp="1604800526270">
+    <state width="1398" height="202" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1604801177454" />
+    <state width="1398" height="276" key="GridCell.Tab.1.bottom" timestamp="1604801177450">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="276" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604800526270" />
-    <state width="1398" height="276" key="GridCell.Tab.1.center" timestamp="1604800526269">
+    <state width="1398" height="276" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604801177450" />
+    <state width="1398" height="276" key="GridCell.Tab.1.center" timestamp="1604801177450">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="276" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1604800526269" />
-    <state width="1398" height="276" key="GridCell.Tab.1.left" timestamp="1604800526269">
+    <state width="1398" height="276" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1604801177450" />
+    <state width="1398" height="276" key="GridCell.Tab.1.left" timestamp="1604801177450">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="276" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1604800526269" />
-    <state width="1398" height="276" key="GridCell.Tab.1.right" timestamp="1604800526269">
+    <state width="1398" height="276" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1604801177450" />
+    <state width="1398" height="276" key="GridCell.Tab.1.right" timestamp="1604801177450">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="276" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1604800526269" />
+    <state width="1398" height="276" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1604801177450" />
     <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1604783505846">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
